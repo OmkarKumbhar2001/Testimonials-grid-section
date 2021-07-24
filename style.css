@@ -1,0 +1,151 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+}
+  
+body{
+    color: #fff;
+    background-color: hsl(0, 9%, 91%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.container{
+    display: flex;
+    height: 40rem;
+    margin: 8% 2% 4% 2%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+.left{
+    width: 170%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.topbox{
+    display: flex;
+}
+.bottombox{
+    display: flex;
+}
+.right{
+    width: 65.45%;
+    display: flex;
+    
+}
+h2{
+    font-size: 1.45rem;
+}
+p{
+    line-height: 1.8;
+}
+.card-2{
+    width: 112%;
+    border-radius: 0.8rem;
+    box-shadow: -0.8rem 1rem 2rem rgb(163, 163, 163);
+    transform:all 0.5s ease-in-out;
+}
+.teacher{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    
+}
+.photo{
+    border-radius:10rem;
+    width: 70%;
+}
+.card{
+    border-radius: 0.8rem;
+    box-shadow: -0.8rem 1rem 2rem rgb(163, 163, 163);
+    transform:all 0.5s ease-in-out;
+}
+.card-2:hover{
+    transform: scale(1.01);
+}
+.card:hover{
+    transform: scale(1.01);
+}
+
+/* _______________________________________________________ids_________________ */
+#item-1{
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x:25rem;
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: hsl(263, 55%, 52%);
+}
+#item-2{
+    padding: 1.5rem;
+    margin: 1rem;
+    background-color: hsl(217, 19%, 35%);
+}
+#item-3{
+    margin: 1rem;
+    color: black;
+    padding: 1.5rem;
+    background-color: #fff;
+}
+#item-4{
+    background-color: hsl(219, 29%, 14%);
+    margin: 1rem;
+    padding: 1.5rem;
+
+}
+#item-5{
+    background-color: #fff;
+    color: black;
+    margin: 1.5rem;
+    padding: 1.5rem;
+}
+@media screen and (min-width:912px) and (max-width:1305px){
+    .container{
+        display: flex;
+        height: 80rem;
+        margin: 2% 2% 2% 2%;
+        justify-content: space-between;
+        align-items: center;
+        align-content:flex-start;
+        flex-wrap:wrap ;
+    }
+    .right{
+        width: 100%;
+    }
+}
+@media (max-width: 912px){
+    .container{
+        height: 155rem;
+        margin: 2% 0% 2% 0%;
+        justify-content: space-between;
+        align-items:center;
+        align-content:flex-start;
+        flex-wrap: wrap;
+    }
+    .left{
+        height: 65rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+    }
+    .right{
+        width: 100%;
+       
+        align-self: flex-end;
+        position:absolute;
+    }
+    
+    .topbox{
+        height: 50em;
+        display: flex;
+        flex-direction: column;
+    }
+    .bottombox{
+        height: 55em;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20%;
+    }
+}
